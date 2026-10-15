@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "talea-lst-ml"
+version = "1.0.0"
+description = "Machine Learning for Urban Surface Temperature Estimation from Satellite Indices (TALEA Project, Bologna)"
+readme = "README.md"
+authors = [
+    { name = "Fabio Malagutti" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.22.0",
+    "pandas>=1.4.0",
+    "geopandas>=0.14.0",
+    "scikit-learn>=1.0.0",
+    "joblib>=1.2.0",
+    "matplotlib>=3.5.0",
+    "seaborn>=0.12.0",
+    "shapely>=2.0.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
