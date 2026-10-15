@@ -1,0 +1,6 @@
+# GitHub Linguist configuration
+# Mark Jupyter Notebooks as documentation so that the modular Python package (src/, train.py, evaluate.py)
+# is recognized as the primary codebase language (Python 100%).
+*.ipynb linguist-documentation=true
+docs/** linguist-documentation=true
+data/** linguist-vendored=true
